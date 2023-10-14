@@ -20,13 +20,13 @@ describe('Context: My First Tests', () => {
     it('Test 2', () => {
       expect(false).to.equal(false);
     });
-    it.skip('Test 3', () => {
+    it('Test 3', () => {
       expect(false).not.to.equal(true);
     });
     it('Test 4', () => {
       expect(5).to.equal(5);
     });
     it('Test 5', () => {
-      expect(true).to.equal('5' == 5);
+      expect(true).to.equal('5' ==5);
     });
   });
