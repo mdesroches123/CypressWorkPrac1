@@ -51,12 +51,9 @@ describe('Find or Get Elements by Using Different Locators', () => {
         .should('contain', 'Login')
         .and('have.class', 'btn btn-primary');
         // expect assertion: creates a subject of our test, then you implement different actions
-        cy.get('#wooden_spoon')
-        .then((buttonElement) => {
-          expect(buttonElement)
-          .to.have.text('Login');
-          expect(buttonElement)
-          .to.have.class('btn btn-primary');
+        cy.get('#wooden_spoon').then((buttonElement) => {
+            expect(buttonElement).to.have.text('Login');
+            expect(buttonElement).to.have.class('btn btn-primary');
         });
       });
     });
